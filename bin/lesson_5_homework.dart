@@ -1,9 +1,7 @@
 import 'package:test/expect.dart';
 import 'package:lesson_5_homework/lesson_5_homework.dart' as lesson_5_homework;
 
-
-void main(List<String> arguments){
-
+void main(List<String> arguments) {
   //Задание 1
   List<int> list = [1, 7, 12, 3, 56, 2, 87, 34, 54];
   print('${list[0]} ${list[4]} ${list[8]}');
@@ -46,11 +44,12 @@ void main(List<String> arguments){
   //Задание 4
   List<int> numbers = [1, 2, 3, 4, 5, 6, 7];
   // contains - is search elemnt in list
-  print('${numbers.contains(3)} ${numbers.first} ${numbers.last}, ${numbers.length}');
+  print(
+      '${numbers.contains(3)} ${numbers.first} ${numbers.last}, ${numbers.length}');
   // print(numbers.first);
   // print(numbers.last);
   // print(numbers.length);
-  
+
   //Задание 5
   List mixed = [601, 123, 2, "dart", 45, 95, "dart24", 1];
   print('${mixed.contains('dart')} ${mixed.contains(951)}');
@@ -60,9 +59,11 @@ void main(List<String> arguments){
   List dart = ['post', 1, 0, 'flutter'];
   String myDart = 'Flutter';
   // forEach - it`s just 'for i in dart'
-  dart.forEach((element) {
-    print(element == myDart.toLowerCase());
-  });
+  // dart.forEach((element) {
+  //   print(element == myDart.toLowerCase());
+  // });
+  print(dart.contains(myDart.toLowerCase()));
+
 
   //Задание 7
   List i_learn_flutter = ['I', 'Started', 'Learn', 'Flutter', 'Since', 'April'];
